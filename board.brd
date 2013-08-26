@@ -2668,6 +2668,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R14" pad="1"/>
 <wire x1="30.695" y1="23.1775" x2="30.7975" y2="23.1775" width="0.254" layer="1"/>
 <wire x1="30.7975" y1="23.1775" x2="30.7975" y2="24.525" width="0.254" layer="1"/>
+<contactref element="U1" pad="32"/>
+<wire x1="54.805" y1="28.46" x2="56.0825" y2="28.46" width="0.254" layer="1"/>
+<wire x1="56.0825" y1="28.46" x2="56.515" y2="28.8925" width="0.254" layer="1"/>
 </signal>
 <signal name="GPIO">
 <contactref element="U1" pad="25"/>
@@ -3673,9 +3676,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$2" pad="33"/>
 <wire x1="27.39" y1="23.05" x2="28.995" y2="23.05" width="0.254" layer="1"/>
 <wire x1="28.995" y1="23.05" x2="28.995" y2="23.1775" width="0.254" layer="1"/>
-</signal>
-<signal name="MP3_XTEST">
-<contactref element="U1" pad="32"/>
 </signal>
 </signals>
 </board>
