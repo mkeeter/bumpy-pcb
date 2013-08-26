@@ -12691,6 +12691,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="R14" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY51" library="supply2" deviceset="VDD" device=""/>
 <part name="C33" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
+<part name="SUPPLY53" library="supply2" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12834,6 +12835,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="R14" gate="G$1" x="5.08" y="22.86" rot="R90"/>
 <instance part="SUPPLY51" gate="G$1" x="2.54" y="17.78" rot="R90"/>
 <instance part="C33" gate="G$1" x="175.26" y="124.46" rot="R270"/>
+<instance part="SUPPLY53" gate="G$1" x="147.32" y="55.88" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -12955,6 +12957,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="SUPPLY51" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="XTEST"/>
+<pinref part="SUPPLY53" gate="G$1" pin="VDD"/>
 </segment>
 </net>
 <net name="GPIO" class="0">
@@ -13964,13 +13970,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="G$1" pin="PE2/!HWB"/>
 <wire x1="5.08" y1="27.94" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MP3_XTEST" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="XTEST"/>
-<wire x1="149.86" y1="55.88" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
-<label x="142.24" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
