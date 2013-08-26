@@ -12692,6 +12692,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="SUPPLY51" library="supply2" deviceset="VDD" device=""/>
 <part name="C33" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
 <part name="SUPPLY53" library="supply2" deviceset="VDD" device=""/>
+<part name="R16" library="rcl" deviceset="R-US_" device="R0603W" value="10k"/>
+<part name="R17" library="rcl" deviceset="R-US_" device="R0603W" value="10k"/>
+<part name="SUPPLY54" library="supply2" deviceset="VDD" device=""/>
+<part name="SUPPLY55" library="supply2" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12836,6 +12840,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="SUPPLY51" gate="G$1" x="2.54" y="17.78" rot="R90"/>
 <instance part="C33" gate="G$1" x="175.26" y="124.46" rot="R270"/>
 <instance part="SUPPLY53" gate="G$1" x="147.32" y="55.88" rot="R90"/>
+<instance part="R16" gate="G$1" x="134.62" y="71.12" rot="R90"/>
+<instance part="R17" gate="G$1" x="124.46" y="68.58" rot="R90"/>
+<instance part="SUPPLY54" gate="G$1" x="124.46" y="76.2"/>
+<instance part="SUPPLY55" gate="G$1" x="134.62" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -12961,6 +12969,14 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="U1" gate="G$1" pin="XTEST"/>
 <pinref part="SUPPLY53" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="SUPPLY54" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="SUPPLY55" gate="G$1" pin="VDD"/>
 </segment>
 </net>
 <net name="GPIO" class="0">
@@ -13679,8 +13695,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="MP3_XCS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="XCS"/>
-<wire x1="129.54" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 <label x="137.16" y="66.04" size="1.778" layer="95"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
+<junction x="134.62" y="66.04"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="PB5(ADC12)"/>
@@ -13691,8 +13710,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="MP3_XDCS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="XDCS/BSYNC"/>
-<wire x1="129.54" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
 <label x="137.16" y="63.5" size="1.778" layer="95"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="63.5" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
+<junction x="124.46" y="63.5"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="PB6(ADC13)"/>

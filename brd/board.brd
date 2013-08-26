@@ -2516,6 +2516,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R15" library="rcl" package="R0603W" value="10k" x="66.9925" y="25.0825" smashed="yes" rot="R180"/>
 <element name="R14" library="rcl" package="R0603" value="10k" x="29.845" y="23.1775" smashed="yes" rot="R180"/>
 <element name="C33" library="rcl" package="C0603K" value="1u" x="50.165" y="27.6225" smashed="yes" rot="R270"/>
+<element name="R16" library="rcl" package="R0603W" value="10k" x="29.845" y="21.2725" rot="R180"/>
+<element name="R17" library="rcl" package="R0603W" value="10k" x="32.7025" y="19.3675" rot="R180"/>
 </elements>
 <signals>
 <signal name="RCAP">
@@ -2671,6 +2673,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U1" pad="32"/>
 <wire x1="54.805" y1="28.46" x2="56.0825" y2="28.46" width="0.254" layer="1"/>
 <wire x1="56.0825" y1="28.46" x2="56.515" y2="28.8925" width="0.254" layer="1"/>
+<contactref element="R17" pad="2"/>
+<contactref element="R16" pad="2"/>
+<wire x1="28.995" y1="21.2725" x2="31.8525" y2="19.3675" width="0" layer="19" extent="1-1"/>
+<wire x1="30.695" y1="23.1775" x2="28.995" y2="21.2725" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO">
 <contactref element="U1" pad="25"/>
@@ -3387,20 +3393,19 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="56.805" y1="33.46" x2="56.805" y2="32.095" width="0.254" layer="1"/>
 <wire x1="56.805" y1="32.095" x2="57.4675" y2="31.4325" width="0.254" layer="1"/>
 <via x="57.4675" y="31.4325" extent="1-16" drill="0.508"/>
-<wire x1="60.6425" y1="34.29" x2="65.0875" y2="34.29" width="0.254" layer="16"/>
+<wire x1="60.325" y1="34.29" x2="65.0875" y2="34.29" width="0.254" layer="16"/>
 <wire x1="65.0875" y1="34.29" x2="68.2625" y2="31.115" width="0.254" layer="16"/>
 <wire x1="68.2625" y1="31.115" x2="68.2625" y2="26.3525" width="0.254" layer="16"/>
 <contactref element="U$2" pad="29"/>
 <wire x1="27.39" y1="19.85" x2="26.2" y2="19.85" width="0.254" layer="1"/>
 <wire x1="26.2" y1="19.85" x2="25.7175" y2="19.3675" width="0.254" layer="1"/>
 <via x="25.7175" y="19.3675" extent="1-16" drill="0.508"/>
-<wire x1="25.7175" y1="19.3675" x2="26.035" y2="19.685" width="0.254" layer="16"/>
-<wire x1="26.035" y1="19.685" x2="26.3525" y2="20.0025" width="0.254" layer="16"/>
-<wire x1="26.3525" y1="20.0025" x2="60.6425" y2="20.0025" width="0.254" layer="16"/>
-<wire x1="60.6425" y1="20.0025" x2="61.9125" y2="20.0025" width="0.254" layer="16"/>
+<wire x1="25.7175" y1="19.3675" x2="26.3525" y2="20.0025" width="0.254" layer="16"/>
+<wire x1="26.3525" y1="20.0025" x2="61.9125" y2="20.0025" width="0.254" layer="16"/>
 <wire x1="61.9125" y1="20.0025" x2="68.2625" y2="26.3525" width="0.254" layer="16"/>
-<wire x1="60.6425" y1="34.29" x2="60.325" y2="34.29" width="0.254" layer="16"/>
 <wire x1="60.325" y1="34.29" x2="57.4675" y2="31.4325" width="0.254" layer="16"/>
+<contactref element="R16" pad="1"/>
+<wire x1="27.39" y1="19.85" x2="30.695" y2="21.2725" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MP3_XDCS">
 <contactref element="U1" pad="13"/>
@@ -3417,6 +3422,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="61.595" y1="20.6375" x2="67.31" y2="26.3525" width="0.254" layer="16"/>
 <wire x1="27.39" y1="20.65" x2="25.095" y2="20.65" width="0.254" layer="1"/>
 <wire x1="25.095" y1="20.65" x2="24.4475" y2="20.0025" width="0.254" layer="1"/>
+<contactref element="R17" pad="1"/>
+<wire x1="27.39" y1="20.65" x2="33.5525" y2="19.3675" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MP3_DREQ">
 <contactref element="U1" pad="8"/>
