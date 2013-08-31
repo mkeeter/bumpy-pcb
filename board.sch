@@ -9350,6 +9350,12 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <part name="R16" library="rcl" deviceset="R-US_" device="R0603W" value="100k"/>
 <part name="R17" library="rcl" deviceset="R-US_" device="R0603W" value="100k"/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
+<part name="R26" library="rcl" deviceset="R-US_" device="R0603W" value="10k"/>
+<part name="R27" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R28" library="rcl" deviceset="R-US_" device="R0603W" value="10k"/>
+<part name="SUPPLY14" library="supply2" deviceset="VDD" device=""/>
+<part name="SUPPLY19" library="supply2" deviceset="VDD" device=""/>
+<part name="SUPPLY52" library="supply2" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9488,6 +9494,12 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <instance part="R16" gate="G$1" x="185.42" y="30.48" rot="R90"/>
 <instance part="R17" gate="G$1" x="187.96" y="27.94" rot="R90"/>
 <instance part="SUPPLY10" gate="GND" x="180.34" y="20.32"/>
+<instance part="R26" gate="G$1" x="104.14" y="88.9"/>
+<instance part="R27" gate="G$1" x="104.14" y="83.82"/>
+<instance part="R28" gate="G$1" x="99.06" y="66.04"/>
+<instance part="SUPPLY14" gate="G$1" x="104.14" y="68.58"/>
+<instance part="SUPPLY19" gate="G$1" x="111.76" y="88.9" rot="R270"/>
+<instance part="SUPPLY52" gate="G$1" x="111.76" y="83.82" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9580,6 +9592,18 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <segment>
 <pinref part="U$2" gate="G$1" pin="TEST"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="SUPPLY14" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="SUPPLY19" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="R27" gate="G$1" pin="2"/>
+<pinref part="SUPPLY52" gate="G$1" pin="VDD"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -10206,15 +10230,17 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <label x="68.58" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
-<label x="93.98" y="66.04" size="1.778" layer="95"/>
+<label x="81.28" y="91.44" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PC6(OC.1A/PCINT8)"/>
+<wire x1="78.74" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MP3_XCS" class="0">
 <segment>
 <label x="81.28" y="88.9" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="PC7(INT4/ICP1/CLKO)"/>
-<wire x1="78.74" y1="88.9" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="XCS"/>
@@ -10224,14 +10250,15 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 </net>
 <net name="MP3_XDCS" class="0">
 <segment>
-<label x="81.28" y="91.44" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="PC6(OC.1A/PCINT8)"/>
-<wire x1="78.74" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="XDCS"/>
 <wire x1="198.12" y1="58.42" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
 <label x="190.5" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB7(INT4/ICP1/CLKO)"/>
+<wire x1="78.74" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
+<label x="81.28" y="66.04" size="1.778" layer="95"/>
+<pinref part="R28" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="MP3_DREQ" class="0">
@@ -10361,8 +10388,9 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <label x="279.4" y="165.1" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="43.18" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
-<label x="93.98" y="43.18" size="1.778" layer="95"/>
+<label x="83.82" y="50.8" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PD4(INT5/AIN3)"/>
+<wire x1="78.74" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STCP" class="0">
@@ -10372,8 +10400,9 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <label x="281.94" y="165.1" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
-<label x="93.98" y="68.58" size="1.778" layer="95"/>
+<label x="83.82" y="48.26" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PD5(XCK/AIN4/PCINT12)"/>
+<wire x1="78.74" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DS" class="0">
@@ -10383,8 +10412,9 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <label x="264.16" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
-<label x="93.98" y="63.5" size="1.778" layer="95"/>
+<label x="83.82" y="45.72" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PD6(RTS/AIN5/INT6)"/>
+<wire x1="78.74" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -10406,9 +10436,10 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <label x="124.46" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
 <label x="83.82" y="83.82" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="PB0(SS/PCINT0)"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENCODER_A" class="0">
@@ -10418,8 +10449,9 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <label x="231.14" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="109.22" y1="104.14" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
-<label x="111.76" y="104.14" size="1.778" layer="95"/>
+<wire x1="78.74" y1="58.42" x2="88.9" y2="58.42" width="0.1524" layer="91"/>
+<label x="81.28" y="58.42" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PD1(AIN0/INT1)"/>
 </segment>
 </net>
 <net name="ENCODER_B" class="0">
@@ -10429,8 +10461,9 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <label x="243.84" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="109.22" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
-<label x="111.76" y="99.06" size="1.778" layer="95"/>
+<label x="81.28" y="99.06" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PC2(PCINT11/AIN2)"/>
+<wire x1="78.74" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENCODER_S" class="0">
@@ -10440,8 +10473,9 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <label x="238.76" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="109.22" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<label x="111.76" y="101.6" size="1.778" layer="95"/>
+<wire x1="78.74" y1="60.96" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
+<label x="81.28" y="60.96" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PD0(OC.0B/INT0)"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -10457,10 +10491,6 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <pinref part="U2" gate="G$1" pin="SHIELD@4"/>
 <wire x1="132.08" y1="45.72" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
 <label x="132.08" y="43.18" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<wire x1="91.44" y1="106.68" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
-<label x="93.98" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
