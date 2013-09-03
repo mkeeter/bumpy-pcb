@@ -3019,9 +3019,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C18" pad="2"/>
 <contactref element="U4" pad="3"/>
 <contactref element="R13" pad="2"/>
-<contactref element="U4" pad="1"/>
 <contactref element="U4" pad="8"/>
-<wire x1="7.28" y1="30.78" x2="7.28" y2="31.75" width="0.4064" layer="1"/>
 <wire x1="8.58" y1="30.78" x2="8.58" y2="31.425" width="0.508" layer="1"/>
 <wire x1="8.58" y1="31.425" x2="8.255" y2="31.75" width="0.508" layer="1"/>
 <wire x1="8.255" y1="31.75" x2="7.62" y2="31.75" width="0.508" layer="1"/>
