@@ -9352,6 +9352,8 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <part name="SUPPLY14" library="supply2" deviceset="VDD" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="VDD" device=""/>
 <part name="SUPPLY52" library="supply2" deviceset="VDD" device=""/>
+<part name="R29" library="rcl" deviceset="R-US_" device="R0603W" value="100k"/>
+<part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9495,6 +9497,8 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <instance part="SUPPLY14" gate="G$1" x="104.14" y="68.58"/>
 <instance part="SUPPLY19" gate="G$1" x="111.76" y="88.9" rot="R270"/>
 <instance part="SUPPLY52" gate="G$1" x="111.76" y="83.82" rot="R270"/>
+<instance part="R29" gate="G$1" x="104.14" y="93.98"/>
+<instance part="SUPPLY34" gate="GND" x="111.76" y="93.98" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -9861,6 +9865,10 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <junction x="182.88" y="22.86"/>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 <junction x="180.34" y="22.86"/>
+</segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="SUPPLY34" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -10269,7 +10277,8 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <segment>
 <label x="81.28" y="93.98" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="PC5(PCINT9/OC.1B)"/>
-<wire x1="78.74" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -10368,7 +10377,7 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <pinref part="R28" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="SHCP" class="0">
+<net name="SHIFT_SHCP" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="SHCP"/>
 <wire x1="279.4" y1="162.56" x2="279.4" y2="170.18" width="0.1524" layer="91"/>
@@ -10380,7 +10389,7 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <wire x1="78.74" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="STCP" class="0">
+<net name="SHIFT_STCP" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="STCP"/>
 <wire x1="281.94" y1="162.56" x2="281.94" y2="170.18" width="0.1524" layer="91"/>
@@ -10392,7 +10401,7 @@ CEDT is Managed by Dhananjay V. Gadre (dvgadre@gmail.com)&lt;br&gt;&lt;br&gt;
 <wire x1="78.74" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DS" class="0">
+<net name="SHIFT_DS" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="DS"/>
 <wire x1="271.78" y1="142.24" x2="264.16" y2="142.24" width="0.1524" layer="91"/>
