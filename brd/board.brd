@@ -2395,10 +2395,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R27" library="rcl" package="R0603W" value="75" x="44.45" y="23.8125" smashed="yes" rot="R180"/>
 <element name="R28" library="rcl" package="R0603W" value="75" x="44.45" y="25.7175" smashed="yes" rot="R180"/>
 <element name="U4" library="mkmp3" package="SOT23-5" value="3.3V" x="15.875" y="25.0825" smashed="yes" rot="R90">
-<attribute name="VALUE" x="16.8275" y="23.368" size="0.762" layer="25" rot="R180"/>
+<attribute name="VALUE" x="13.97" y="25.273" size="0.762" layer="25" rot="R180"/>
 </element>
 <element name="U5" library="mkmp3" package="SOT23-5" value="2.8V" x="16.1925" y="35.56" smashed="yes" rot="R90">
-<attribute name="VALUE" x="17.145" y="33.8455" size="0.762" layer="25" rot="R180"/>
+<attribute name="VALUE" x="13.97" y="35.7505" size="0.762" layer="25" rot="R180"/>
 </element>
 <element name="C9" library="rcl" package="C0603K" value="4.7u" x="19.05" y="34.925" smashed="yes" rot="R90"/>
 <element name="C8" library="rcl" package="C0603K" value="4.7u" x="18.7325" y="24.4475" smashed="yes" rot="R90"/>
