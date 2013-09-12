@@ -2587,10 +2587,10 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="0" y="2.54"/>
 <vertex x="0" y="40.64"/>
 <vertex x="2.54" y="43.18"/>
-<vertex x="63.1825" y="43.18"/>
-<vertex x="65.7225" y="40.64"/>
-<vertex x="65.7225" y="2.54"/>
-<vertex x="63.1825" y="0"/>
+<vertex x="63.5" y="43.18"/>
+<vertex x="66.04" y="40.64"/>
+<vertex x="66.04" y="2.54"/>
+<vertex x="63.5" y="0"/>
 </polygon>
 <contactref element="C2" pad="2"/>
 <contactref element="JP1" pad="GND"/>
