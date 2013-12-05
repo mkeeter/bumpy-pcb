@@ -12563,6 +12563,7 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 <part name="U$1" library="SparkFun-DigitalIC" deviceset="ATMEGA32U4" device="TQFP"/>
 <part name="SUPPLY53" library="supply2" deviceset="VDD" device=""/>
+<part name="C31" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -12709,6 +12710,7 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <instance part="SUPPLY34" gate="GND" x="101.6" y="93.98" rot="R90"/>
 <instance part="U$1" gate="G$1" x="48.26" y="66.04"/>
 <instance part="SUPPLY53" gate="G$1" x="27.94" y="99.06" rot="R90"/>
+<instance part="C31" gate="G$1" x="7.62" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -12758,6 +12760,9 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <segment>
 <pinref part="SUPPLY15" gate="G$1" pin="VDD"/>
 <pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C31" gate="G$1" pin="1"/>
+<wire x1="0" y1="35.56" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
+<junction x="0" y="35.56"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -13023,6 +13028,9 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <segment>
 <pinref part="SUPPLY41" gate="GND" pin="GND"/>
 <pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C31" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="27.94" x2="0" y2="27.94" width="0.1524" layer="91"/>
+<junction x="0" y="27.94"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DGND0"/>
