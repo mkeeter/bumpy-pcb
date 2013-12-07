@@ -12564,6 +12564,9 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <part name="U$1" library="SparkFun-DigitalIC" deviceset="ATMEGA32U4" device="TQFP"/>
 <part name="SUPPLY53" library="supply2" deviceset="VDD" device=""/>
 <part name="C31" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
+<part name="R30" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R31" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="SUPPLY54" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12700,17 +12703,20 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <instance part="R11" gate="G$1" x="185.42" y="30.48" rot="R90"/>
 <instance part="R13" gate="G$1" x="187.96" y="27.94" rot="R90"/>
 <instance part="SUPPLY10" gate="GND" x="180.34" y="20.32"/>
-<instance part="R7" gate="G$1" x="93.98" y="91.44"/>
+<instance part="R7" gate="G$1" x="93.98" y="93.98"/>
 <instance part="R8" gate="G$1" x="83.82" y="43.18"/>
-<instance part="R6" gate="G$1" x="93.98" y="88.9"/>
-<instance part="SUPPLY14" gate="G$1" x="101.6" y="88.9" rot="R270"/>
-<instance part="SUPPLY19" gate="G$1" x="101.6" y="91.44" rot="R270"/>
+<instance part="R6" gate="G$1" x="93.98" y="91.44"/>
+<instance part="SUPPLY14" gate="G$1" x="101.6" y="91.44" rot="R270"/>
+<instance part="SUPPLY19" gate="G$1" x="101.6" y="93.98" rot="R270"/>
 <instance part="SUPPLY52" gate="G$1" x="93.98" y="43.18" rot="R270"/>
-<instance part="R29" gate="G$1" x="93.98" y="93.98"/>
-<instance part="SUPPLY34" gate="GND" x="101.6" y="93.98" rot="R90"/>
+<instance part="R29" gate="G$1" x="93.98" y="96.52"/>
+<instance part="SUPPLY34" gate="GND" x="101.6" y="96.52" rot="R90"/>
 <instance part="U$1" gate="G$1" x="48.26" y="66.04"/>
 <instance part="SUPPLY53" gate="G$1" x="27.94" y="99.06" rot="R90"/>
 <instance part="C31" gate="G$1" x="7.62" y="33.02"/>
+<instance part="R30" gate="G$1" x="111.76" y="185.42" rot="R180"/>
+<instance part="R31" gate="G$1" x="96.52" y="185.42" rot="R180"/>
+<instance part="SUPPLY54" gate="GND" x="88.9" y="185.42" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -13097,6 +13103,10 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <wire x1="30.48" y1="35.56" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
 <junction x="30.48" y="35.56"/>
 </segment>
+<segment>
+<pinref part="R31" gate="G$1" pin="2"/>
+<pinref part="SUPPLY54" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -13443,6 +13453,8 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <junction x="116.84" y="162.56"/>
 <pinref part="U5" gate="G$1" pin="EN"/>
 <wire x1="116.84" y1="152.4" x2="129.54" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<junction x="116.84" y="185.42"/>
 </segment>
 </net>
 <net name="CHG_B" class="0">
@@ -13459,10 +13471,10 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 </net>
 <net name="MP3_XCS" class="0">
 <segment>
-<label x="71.12" y="91.44" size="1.778" layer="95"/>
+<label x="71.12" y="93.98" size="1.778" layer="95"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PF1(ADC1)"/>
+<wire x1="88.9" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PF4(ADC4)"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="XCS"/>
@@ -13477,10 +13489,10 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <label x="190.5" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="88.9" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
-<label x="71.12" y="88.9" size="1.778" layer="95"/>
+<label x="71.12" y="91.44" size="1.778" layer="95"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="PF0(ADC0)"/>
+<pinref part="U$1" gate="G$1" pin="PF1(ADC1)"/>
+<wire x1="66.04" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MP3_DREQ" class="0">
@@ -13490,9 +13502,9 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <label x="185.42" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="71.12" y="96.52" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="PF5(ADC5)"/>
-<wire x1="88.9" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<label x="71.12" y="99.06" size="1.778" layer="95"/>
+<wire x1="88.9" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PF6(ADC6)"/>
 </segment>
 </net>
 <net name="MP3_XRESET" class="0">
@@ -13502,10 +13514,10 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <label x="180.34" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="71.12" y="93.98" size="1.778" layer="95"/>
-<wire x1="66.04" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
+<label x="71.12" y="96.52" size="1.778" layer="95"/>
 <pinref part="R29" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="PF4(ADC4)"/>
+<pinref part="U$1" gate="G$1" pin="PF5(ADC5)"/>
+<wire x1="66.04" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -13838,6 +13850,22 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <pinref part="U$1" gate="G$1" pin="UCAP"/>
 <wire x1="30.48" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
 <label x="20.32" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="V_READ" class="0">
+<segment>
+<pinref part="R30" gate="G$1" pin="2"/>
+<pinref part="R31" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="185.42" x2="104.14" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="185.42" x2="106.68" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="185.42" x2="104.14" y2="195.58" width="0.1524" layer="91"/>
+<junction x="104.14" y="185.42"/>
+<label x="104.14" y="195.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PF0(ADC0)"/>
+<wire x1="66.04" y1="88.9" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
+<label x="71.12" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
