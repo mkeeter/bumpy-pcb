@@ -232,9 +232,9 @@
 <wire x1="-0.635" y1="40.3225" x2="2.8575" y2="43.815" width="0" layer="20"/>
 <wire x1="2.8575" y1="43.815" x2="63.1825" y2="43.815" width="0" layer="20"/>
 <wire x1="63.1825" y1="43.815" x2="66.675" y2="40.3225" width="0" layer="20"/>
-<wire x1="66.675" y1="40.3225" x2="66.675" y2="2.8575" width="0" layer="20"/>
-<wire x1="66.675" y1="2.8575" x2="63.1825" y2="-0.635" width="0" layer="20"/>
-<wire x1="63.1825" y1="-0.635" x2="2.8575" y2="-0.635" width="0" layer="20"/>
+<wire x1="66.675" y1="40.3225" x2="66.675" y2="0.9525" width="0" layer="20"/>
+<wire x1="66.675" y1="0.9525" x2="65.0875" y2="-0.635" width="0" layer="20"/>
+<wire x1="65.0875" y1="-0.635" x2="2.8575" y2="-0.635" width="0" layer="20"/>
 <wire x1="2.8575" y1="-0.635" x2="-0.635" y2="2.8575" width="0" layer="20"/>
 <text x="62.23" y="0.635" size="1.778" layer="22" rot="MR0">MJK
 09/13</text>
@@ -2383,7 +2383,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="-0.9525" y="28.8925" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C6" library="rcl" package="C0603K" value="1u" x="2.2225" y="32.385" smashed="yes" rot="R90"/>
-<element name="S2" library="mkmp3" package="EVQ-WKA" value="EVQ-WKA" x="53.34" y="12.3825" smashed="yes" rot="R225"/>
+<element name="S2" library="mkmp3" package="EVQ-WKA" value="EVQ-WKA" x="54.2925" y="11.43" smashed="yes" rot="R225"/>
 <element name="U7" library="mkmp3" package="AUDIO-JACK-3.5MM-SMD" value="" x="64.135" y="36.83" smashed="yes" rot="R180"/>
 <element name="LED8" library="LilyPad-Wearables" package="LED-1206" value="" x="42.4815" y="28.575" smashed="yes">
 <attribute name="VALUE" x="40.3115" y="25.835" size="1.27" layer="27"/>
@@ -2615,8 +2615,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="3.4925" y="43.18"/>
 <vertex x="62.5475" y="43.18"/>
 <vertex x="66.04" y="39.6875"/>
-<vertex x="66.04" y="3.4925"/>
-<vertex x="62.5475" y="0"/>
+<vertex x="66.04" y="1.5875"/>
+<vertex x="64.4525" y="0"/>
 </polygon>
 <polygon width="0.508" layer="1" isolate="0.4064">
 <vertex x="3.4925" y="0"/>
@@ -2625,8 +2625,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="3.4925" y="43.18"/>
 <vertex x="62.5475" y="43.18"/>
 <vertex x="66.04" y="39.6875"/>
-<vertex x="66.04" y="3.4925"/>
-<vertex x="62.5475" y="0"/>
+<vertex x="66.04" y="1.5875"/>
+<vertex x="64.4525" y="0"/>
 </polygon>
 <contactref element="C2" pad="2"/>
 <contactref element="JP1" pad="GND"/>
@@ -3447,7 +3447,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="S2" pad="1"/>
 <via x="53.6575" y="16.1925" extent="1-16" drill="0.5"/>
 <wire x1="53.6575" y1="16.1925" x2="56.95461875" y2="16.1925" width="0.254" layer="1"/>
-<wire x1="56.95461875" y1="16.1925" x2="57.052309375" y2="16.094809375" width="0.254" layer="1"/>
+<wire x1="56.95461875" y1="16.1925" x2="58.004809375" y2="15.142309375" width="0.254" layer="1"/>
 <contactref element="U$1" pad="31"/>
 <wire x1="53.6575" y1="16.1925" x2="46.6725" y2="9.2075" width="0.254" layer="16"/>
 <wire x1="46.6725" y1="9.2075" x2="36.83" y2="9.2075" width="0.254" layer="16"/>
@@ -3465,13 +3465,13 @@ Please make sure your boards conform to these design rules.</description>
 <via x="36.83" y="7.3025" extent="1-16" drill="0.5"/>
 <wire x1="36.83" y1="7.3025" x2="48.895" y2="7.3025" width="0.254" layer="16"/>
 <via x="48.895" y="7.3025" extent="1-16" drill="0.5"/>
-<wire x1="48.895" y1="7.3025" x2="50.865125" y2="9.272625" width="0.254" layer="1"/>
-<wire x1="50.865125" y1="9.272625" x2="50.865125" y2="9.907625" width="0.254" layer="1"/>
+<wire x1="51.817625" y1="8.955125" x2="50.547625" y2="8.955125" width="0.254" layer="1"/>
+<wire x1="50.547625" y1="8.955125" x2="48.895" y2="7.3025" width="0.254" layer="1"/>
 </signal>
 <signal name="ENCODER_S">
 <contactref element="S2" pad="4"/>
 <via x="52.3875" y="13.335" extent="1-16" drill="0.5"/>
-<wire x1="52.3875" y1="13.335" x2="53.34" y2="12.3825" width="0.254" layer="1"/>
+<wire x1="52.3875" y1="13.335" x2="54.2925" y2="11.43" width="0.254" layer="1"/>
 <contactref element="U$1" pad="30"/>
 <wire x1="52.3875" y1="13.335" x2="47.3075" y2="8.255" width="0.254" layer="16"/>
 <wire x1="47.3075" y1="8.255" x2="37.465" y2="8.255" width="0.254" layer="16"/>
