@@ -13465,7 +13465,7 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 </segment>
 <segment>
 <label x="71.12" y="60.96" size="1.778" layer="95"/>
-<wire x1="66.04" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PE6"/>
 </segment>
 </net>
@@ -13503,7 +13503,7 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 </segment>
 <segment>
 <label x="71.12" y="99.06" size="1.778" layer="95"/>
-<wire x1="88.9" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PF6(ADC6)"/>
 </segment>
 </net>
@@ -13864,7 +13864,7 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PF0(ADC0)"/>
-<wire x1="66.04" y1="88.9" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
 <label x="71.12" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
