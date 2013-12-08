@@ -39,7 +39,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -238,8 +238,6 @@
 <wire x1="2.8575" y1="-0.635" x2="-0.635" y2="2.8575" width="0" layer="20"/>
 <text x="62.865" y="0.635" size="1.778" layer="22" rot="MR0">MJK
 12/13</text>
-<rectangle x1="2.54" y1="9.8425" x2="53.34" y2="43.3705" layer="46"/>
-<rectangle x1="0" y1="23.495" x2="2.54" y2="29.337" layer="46"/>
 </plain>
 <libraries>
 <library name="rcl">
