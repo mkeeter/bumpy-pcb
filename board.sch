@@ -12429,7 +12429,7 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <part name="U2" library="SparkFun-PowerIC" deviceset="MAX1555" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="ARDUINO_SERIAL_PROGRAM" device="LOCK"/>
-<part name="C25" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
+<part name="C25" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
 <part name="SUPPLY1" library="supply2" deviceset="VDD" device=""/>
 <part name="C24" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
 <part name="C22" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
