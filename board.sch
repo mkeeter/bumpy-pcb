@@ -12538,7 +12538,6 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <part name="SUPPLY50" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY51" library="supply2" deviceset="VDD" device=""/>
 <part name="C17" library="rcl" deviceset="C-US" device="C0603K" value="1u"/>
-<part name="SUPPLY40" library="supply2" deviceset="VDD" device=""/>
 <part name="SUPPLY41" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY57" library="supply2" deviceset="GND" device=""/>
 <part name="C5" library="rcl" deviceset="C-US" device="C0603K" value="0.1u"/>
@@ -12567,6 +12566,7 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <part name="R30" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R31" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY54" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY40" library="supply2" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12688,7 +12688,6 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <instance part="SUPPLY50" gate="GND" x="111.76" y="58.42"/>
 <instance part="SUPPLY51" gate="G$1" x="30.48" y="119.38"/>
 <instance part="C17" gate="G$1" x="218.44" y="132.08" rot="R270"/>
-<instance part="SUPPLY40" gate="G$1" x="12.7" y="78.74"/>
 <instance part="SUPPLY41" gate="GND" x="0" y="25.4"/>
 <instance part="SUPPLY57" gate="GND" x="27.94" y="27.94" rot="R270"/>
 <instance part="C5" gate="G$1" x="0" y="33.02"/>
@@ -12717,6 +12716,7 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <instance part="R30" gate="G$1" x="111.76" y="185.42" rot="R180"/>
 <instance part="R31" gate="G$1" x="96.52" y="185.42" rot="R180"/>
 <instance part="SUPPLY54" gate="GND" x="88.9" y="185.42" rot="R270"/>
+<instance part="SUPPLY40" gate="G$1" x="12.7" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -12824,6 +12824,14 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <pinref part="U$1" gate="G$1" pin="AVCC@44"/>
 <wire x1="30.48" y1="93.98" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
 <junction x="30.48" y="93.98"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="73.66" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="UCAP"/>
+<wire x1="30.48" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="SUPPLY40" gate="G$1" pin="VDD"/>
+<junction x="12.7" y="76.2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13839,17 +13847,6 @@ Please use the QFN-44-NOPAD_1:1 package for the footprint of all boards using a 
 <label x="71.12" y="63.5" size="1.778" layer="95"/>
 <wire x1="66.04" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PD7(ADC10)"/>
-</segment>
-</net>
-<net name="UCAP" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="SUPPLY40" gate="G$1" pin="VDD"/>
-<wire x1="20.32" y1="73.66" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
-<junction x="12.7" y="76.2"/>
-<pinref part="U$1" gate="G$1" pin="UCAP"/>
-<wire x1="30.48" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
-<label x="20.32" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V_READ" class="0">
