@@ -1,0 +1,38 @@
+Name	Vendor	Part number	Count
+12.288 MHz crystal	Digikey	XC1771CT-ND	1
+8 MHz crystal	Digikey	XC1271CT-ND	1
+Power switcher	Digikey	296-34595-5-ND	1
+Encoder wheel	Digikey	P13381SCT-ND	1
+8-bit shift register	Digikey	568-2263-1-ND	1
+Green LED (1206)	Digikey	160-1169-1-ND	8
+2.8V buck regulator	Digikey	LM3671MF-2.8/NOPBCT-ND	1
+3.3V buck regulator	Digikey	LM3671MF-3.3/NOPBCT-ND	1
+2.2uH inductor	Digikey	541-1236-1-ND	2
+Slide switch	Digikey	401-1999-1-ND	1
+MicroSD holder	Digikey	732-3819-1-ND	1
+USB mini plug	Digikey	ED2992CT-ND	1
+Audio jack	Digikey	CP-3523SJCT-ND	1
+6-pin FTDI header	Digikey	A106757-ND	1
+6-pin SPI header	Digikey	A106478-ND	1
+Atmega32u2	Digikey	ATMEGA32U2-AURCT-ND	1
+Max1555 charger	Digikey	MAX1555EZK+TCT-ND	1
+			
+10 Ohm 0603 resistor	Digikey	P10GCT-ND	3
+22 Ohm 0603 resistor	Digikey	P22GCT-ND	2
+75 Ohm 0603 resistor	Digikey	P75GCT-ND	8
+100 Ohm 0603 resistor	Digikey	P100GCT-ND	2
+392 Ohm 0603 resistor	Digikey	P392HCT-ND	1
+10 Kohm 0603 resistor	Digikey	P10KGCT-ND	7
+100 Kohm 0603 resistor	Digikey	P100KGCT-ND	5
+1 MOhm 0603 resistor	Digikey	P1.0MGCT-ND	1
+			
+33 pF 0603 capacitor	Digikey	1276-2267-1-ND	4
+10 nF 0603 capacitor	Digikey	445-1311-1-ND	2
+47 nF 0603 capacitor	Digikey	445-1313-1-ND	1
+0.1 uF 0603 capacitor	Digikey	445-1314-1-ND	12
+1 uF 0603 capacitor	Digikey	445-1322-1-ND	4
+4.7 uF 0603 capacitor	Digikey	445-5178-1-ND	2
+10 uF 0603 capacitor	Digikey	445-4112-1-ND	5
+			
+1000 mAh Lithium battery	Sparkfun	PRT-00339 	1
+MP3 codec	Sparkfun	COM-09398	1
