@@ -237,7 +237,7 @@
 <wire x1="65.0875" y1="-0.635" x2="2.8575" y2="-0.635" width="0" layer="20"/>
 <wire x1="2.8575" y1="-0.635" x2="-0.635" y2="2.8575" width="0" layer="20"/>
 <text x="62.865" y="0.635" size="1.778" layer="22" rot="MR0">MJK
-12/13</text>
+06/14</text>
 </plain>
 <libraries>
 <library name="rcl">
