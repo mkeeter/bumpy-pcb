@@ -34,5 +34,5 @@ Max1555 charger	Digikey	MAX1555EZK+TCT-ND	1	U2
 4.7 uF 0603 capacitor	Digikey	445-5178-1-ND	2	C9, C10
 10 uF 0603 capacitor	Digikey	445-4112-1-ND	5	C1, C13, C14, C30, C31
 				
-1000 mAh Lithium battery	Sparkfun	PRT-00339 	1	JP3
+1000 mAh Lithium battery	Sparkfun	PRT-00339	1	JP3
 MP3 codec	Sparkfun	COM-09398	1	U8
